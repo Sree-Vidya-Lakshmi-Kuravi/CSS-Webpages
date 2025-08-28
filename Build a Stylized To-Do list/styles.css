@@ -1,0 +1,19 @@
+a {
+  text-decoration:none;
+}
+
+a:hover {
+  color:purple;
+}
+
+a:active {
+  color:yellow;
+}
+
+a:focus {
+  outline: 4px black solid;;
+}
+
+a:visited {
+  color:green;
+}
