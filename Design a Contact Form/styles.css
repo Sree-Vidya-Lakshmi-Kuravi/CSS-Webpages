@@ -1,0 +1,36 @@
+.form-container {
+  background-color: aliceblue;
+  border-radius: 50%;
+  padding: 80px;
+  width: 75px;
+}
+
+button[type=submit] {
+  background-color: yellow;
+}
+
+label {
+  margin: 90px;
+  color: red;
+}
+
+input {
+  width: 30px;
+  padding: 50px;
+  margin-bottom: 40px;
+}
+
+textarea {
+  width: 30px;
+  padding: 50px;
+  margin: 70px;
+}
+
+button {
+  background-color: green;
+  font-size: 60px;
+}
+
+button:hover {
+  background-color: blue;
+}
