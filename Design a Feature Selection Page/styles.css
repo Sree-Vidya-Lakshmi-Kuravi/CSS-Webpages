@@ -1,0 +1,21 @@
+input[type="checkbox"] {
+  appearance: none;
+  border-width: 90px;
+  border-color: yellow;
+  border: 1px solid blue;
+}
+
+input[type="checkbox"]:checked {
+  position: relative;
+  background-color: orange;
+  border: green;
+}
+
+input[type="checkbox"]:checked::after {
+  content: "✓";
+  font-size: 16px;
+  color: white;        /* or any color you prefer */
+  position: absolute;
+  top: 0;
+  left: 4px;           /* centers the checkmark horizontally */
+}
