@@ -1,0 +1,57 @@
+You should have a div with a class of form-container to hold your form.
+
+You should have a form element within the .form-container element.
+
+Within the form element, you should have the following elements and input fields:
+
+An h2 element with some text.
+A text input field for the name with the type set to text and id, name, required attributes.
+An email input field with the type set to email and id, name, required attributes.
+A textarea for the message with id, name, and the required attribute.
+A button element with the text "Submit" and a type attribute of submit.
+Each input and textarea elements should have their corresponding label element with a for attribute set to the element's id.
+
+The .form-container element should have a background color, and have values for border-radius, padding, and width.
+
+The label elements should have a margin and a font color.
+
+The input and textarea elements should have values for:
+
+width.
+padding.
+Margin on the bottom.
+The button element should have a:
+
+Background color
+Font size apart from the default.
+The button should have a hover effect that changes the background color.
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="styles.css"/>
+</head>
+
+<body>
+    <div class="form-container">
+        <form>
+            <h2>Contact Us</h2>
+            <label for="name">Name
+            <input type="text" id="name" name="name" required/>
+            </label>
+            <label for="email">Email
+            <input type="email" id="email" name="email" required/>
+            </label>
+            <label for="message">Message
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>
