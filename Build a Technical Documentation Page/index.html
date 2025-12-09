@@ -1,0 +1,96 @@
+Build a Technical Documentation Page
+-------------------------------------
+You can see a main element with a corresponding id="main-doc", which contains the page's main content (technical documentation).
+Within the #main-doc element, you can see several section elements, each with a class of main-section. There should be a minimum of five.
+The first element within each .main-section should be a header element, which contains text that describes the topic of that section.
+Each section element with the class of main-section should also have an id that corresponds with the text of each header contained within it. Any spaces should be replaced with underscores (e.g. The section that contains the header "JavaScript and Java" should have a corresponding id="JavaScript_and_Java").
+The .main-section elements should contain at least ten p elements total (not each).
+The .main-section elements should contain at least five code elements total (not each).
+The .main-section elements should contain at least five li items total (not each).
+You can see a nav element with a corresponding id="navbar".
+The navbar element should contain one header element which contains text that describes the topic of the technical documentation.
+Additionally, the navbar should contain link (a) elements with the class of nav-link. There should be one for every element with the class main-section.
+The header element in the #navbar must come before any link (a) elements in the navbar.
+Each element with the class of nav-link should contain text that corresponds to the header text within each section (e.g. if you have a "Hello world" section/header, your navbar should have an element which contains the text "Hello world").
+When you click on a navbar element, the page should navigate to the corresponding section of the #main-doc element (e.g. If you click on a .nav-link element that contains the text "Hello world", the page navigates to a section element with that id, and contains the corresponding header).
+On regular sized devices (laptops, desktops), the element with id="navbar" should be shown on the left side of the screen and should always be visible to the user.
+Your technical documentation should use at least one media query.
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Technical Documentation Page</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+
+  <body>
+    <nav id="navbar">
+    <header>Technical Documentation</header>
+    <a class="nav-link" href="#HTML">HTML</a>
+  <a class="nav-link" href="#CSS">CSS</a>
+  <a class="nav-link" href="#JavaScript">JavaScript</a>
+  <a class="nav-link" href="#Animations">Animations</a>
+  <a class="nav-link" href="#Hover_Effects">Hover Effects</a>
+  </nav>
+
+    <main id="main-doc">
+      <section class="main-section" id="HTML" >
+      <header>HTML</header>
+      <p>HTML refers to Hyper Text Markup Language</p>
+      <p>It is a scripting language.</p>
+      <p>HTML is a language for web designing</p>
+      <code>print("Hello World")</code>
+      <ul>
+        <li>Code</li>
+        <li>Compiler</li>
+      </ul>
+      </section>
+
+      <section class="main-section" id="CSS">
+        <header>CSS</header>
+        <p>CSS refers to Cascading StyleSheets</p>
+        <p>CSS is used for styling the webpages.</p>
+        <p>It is a markup languae.</p>
+        <code>let x = 10;</code>
+      <ul>
+        <li>Editor</li>
+        <li>Terminal</li>
+        <li>Project Folder</li>
+      </ul>
+      </section>
+
+      <section class="main-section" id="JavaScript">
+      <header>JavaScript</header>
+      <p>JavaScript is a programming language</p>
+      <p>Can be used for both web pages and programming.</p>
+      <p>It is used for styling webpages.</p>
+      <p>Can be object-oriented.</p>
+      <code>if (x > 0) { console.log(x); }</code>
+      <ul>
+        <li>Conditions</li>
+        <li>Loops</li>
+      </ul>
+      </section>
+
+      <section class="main-section" id="Animations">
+      <header>Animations</header>
+      <p>Animations are the moving images</p>
+      <code>for (let i = 0; i < 5; i++) console.log(i);</code>
+      <ul>
+        <li>For Loop</li>
+        <li>While Loop</li>
+      </ul>
+      </section>
+      <section class="main-section" id="Hover_Effects">
+      <header>Hover Effects</header>
+      <p>When the cursor hovers, it will be performing the operations</p>
+      <code>function factorial(n) { return n === 0 ? 1 : n * factorial(n - 1); }</code>
+      <ul>
+        <li>Recursion</li>
+        <li>Memory</li>
+      </ul>
+      </section>
+  </body>
+</html>
