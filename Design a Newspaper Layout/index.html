@@ -1,0 +1,67 @@
+Design a Newspaper Layout
+--------------------------
+Your page should contain a main element with the class newspaper-layout.
+The .newspaper-layout should include a header with the class title containing an h1 to display the newspaper's name.
+The .newspaper-layout should include an article with the class feature-article for the main news article.
+The .feature-article should include an h2 element for the article title followed by a p element for the article content.
+You should add three more article elements for smaller articles, with classes small-article1, small-article2, and small-article3.
+Each of the smaller articles should include an h3 element for the article title followed by a p element for the article content.
+The .newspaper-layout should include an article element with the class secondary-article for an additional news section.
+The .secondary-article should include an h2 element for the article title followed by a p element for the article content.
+The .newspaper-layout should include a figure with the class cover-image to display an image that represents the newspaper's content.
+The elements with the classes title, feature-article, secondary-article, cover-image, small-article1, small-article2, and small-article3 should have a grid-area property set to the same class name.
+Your .newspaper-layout should use CSS Grid with a grid-template-areas property to define the arrangement of sections:
+The .title should span across the top row.
+The .feature-article should span two columns in the second row, with the .cover-image in the third column.
+The .secondary-article should span two columns in the third row, with the .cover-image in the third column.
+The three small articles should appear in the fourth row.
+The .newspaper-layout should have a grid-template-columns property that divides the space into three equal columns.
+You should set the .newspaper-layout's grid-template-rows property to auto for the first row and divide the remaining space into equal parts for the other rows.
+You should add a gap between grid items.
+Ensure that the image inside .cover-image fits within the designated space by setting its max-width to 100%.
+Note: Be sure to link your stylesheet in your HTML and apply your CSS.
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="utf-8">
+<title>Newspaper Layout</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <main class="newspaper-layout">
+    <header class="title">
+      <h1>Fantastic Four</h1>
+      <article class="feature-article">
+        <h2>Breaking News: Volcano Eruption Disrupts Tourism</h2>
+        <p>Recently, a volcano erupted in a popular tourist destination. The eruption has caused widespread panic and has disrupted tourism in the area. The volcano has been spewing lava and ash for several days now, and authorities are urging residents and tourists to evacuate the area immediately. The eruption has also caused a number of flights to be cancelled, leaving many tourists stranded. The situation is still developing, and authorities are working to contain the eruption and ensure the safety of everyone in the area.</p>
+        <article class="small-article1">
+          <h3>Shardul Thakur Gets Candid on Reuniting With Rohit Sharma at MI: ‘Kaafi Masti Hogi’</h3>
+          <p>ndia all-rounder Shardul Thakur lauded Rohit Sharma and said he made him feel comfortable and allowed self-expression, something he is keen to experience again at the Mumbai Indians (MI). Thakur will reunite with Rohit at MI after being traded to the franchise from Lucknow Super Giants (LSG). Speaking to the MI website, Thakur said that he and Rohit became comfortable with each other, and Rohit's motivation to be himself on and off the field played a major part in it.
+
+"Abhi aur pata chalega jab sath me baithenge toh. Kaafi masti hogi (It will be fun when we meet again). He made me comfortable, he allowed me to be free with him, and he allowed me to express myself. We became comfortable with each other, and he played a major part in it”, Thakur was quoted as saying by the franchise's website on Monday.</p>
+        </article>
+        <article class="small-article2">
+          <h3>Rohit Sharma and Virat Kohli are back together, united by a common threat that isn’t Gautam Gambhir or Ajit Agarkar</h3>
+          <p>When Team India landed in Australia for its first ODI series in six months, Rohit Sharma looked into the team bus, spotted Virat Kohli, and broke into the kind of grin you’d expect from two friends reunited after a long, complicated chapter. Shubman Gill had hugged him just minutes earlier, but this was different. In Kohli, Rohit saw the one presence he’d probably missed the most, the familiar partner he’d grown alongside through the peaks, crises, and reinventions of Indian cricket. From wide-eyed prodigies to all-time greats, they’ve lived parallel careers. Perth was their first meeting since that night in Dubai, where they danced to dandiya after India won the Champions Trophy, Rohit’s final match as captain.</p>
+        </article>
+        <article class="small-article3">
+          <h3>'BCCI Should Take Virat Kohli & Rohit Sharma’s Services': Azharuddin After Ro-Ko Shine Against South Africa</h3>
+          <p>Former India captain and Telangana Minister Mohammad Azharuddin praised Virat Kohli and Rohit Sharma's strong performance during the ODIs against South Africa. He also said that the team must continue to use their experience in ODI cricket and Test matches, this will benefit the young cricketers.
+
+Azharuddin said that both senior players were eager to play ODIs and proved their value once again. "It was a good performance. They both wanted to play ODIs, they are good players, naturally they played good. There is a lot of cricket left," he said.</p>
+        </article>
+        <article class="secondary-article">
+          <h2>Shardul Thakur Credits Rohit Sharma for Allowing Him to Express Himself on the Field</h2>
+          <p>Shardul Thakur Credits Rohit Sharma for Allowing Him to Express Himself on the Field</p>
+          </article>
+        <figure class="cover-image">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHiVX4_ca9xXkxcKdnU_fL_S89YlQDtduHe8BbOXM0YYG4jaqDKIUP63Jz4riok86eEtgin6hB33KFfaXBXA4rPW6fCcDX8QEkAz2hg5yy&s=10" alt="Rohit Sharma">
+        </figure>
+
+</body>
+
+</html>
