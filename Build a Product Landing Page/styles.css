@@ -1,0 +1,66 @@
+/* Make navbar always visible */
+#header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: white;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #ddd;
+  z-index: 1000;
+}
+
+#header-img {
+  width: 60px;
+}
+
+#nav-bar {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Add spacing so content isn't hidden behind fixed nav */
+main {
+  padding-top: 100px;
+}
+
+/* Flexbox requirement */
+.pricing-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.price-box {
+  border: 2px solid black;
+  padding: 20px;
+  width: 150px;
+  text-align: center;
+}
+
+/* Media query requirement */
+@media (max-width: 600px) {
+  #nav-bar {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .pricing-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
